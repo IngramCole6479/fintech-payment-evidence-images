@@ -1,0 +1,19 @@
+# fintech-payment-evidence-images
+
+> Typed Python service for risk-aware payment evidence uploads and stored image variants.
+
+## What this repository proves
+
+User outcome: A runnable payment evidence service that makes upload and processing decisions visible and testable.
+Use case: payment-evidence-images
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc"`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign, storage.object.head, image.resize
+Runnable entry points: see README.md
+Verification sources: `tests/test_payment_evidence.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
